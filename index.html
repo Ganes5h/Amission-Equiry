@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            
+        }
+
+        #enq-head {
+            text-align: center;
+            color: red;
+            background-color: rgb(244, 244, 244);
+            text-shadow: 8px 7px #e6e6e6;
+            padding-top: 15px;
+        }
+        
+
+        .parentresponse {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            /* border: 1px solid red; */
+            padding: 30px;
+            background-color: rgb(244, 244, 244);
+        }
+
+        .response {
+            width: 400px;
+            height: 200px;
+
+            margin: 30px;
+            display: flex;
+            flex-direction: row;
+            box-shadow: 0px 10px 25px rgba(47, 46, 46, 0.25);
+        }
+
+        .image {
+
+            width: 50px;
+            padding: 8px;
+            background-color: bisque;
+        }
+
+        .words {
+
+            width: 350px;
+            background-color: bisque;
+            padding: 15px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            text-align: left;
+        }
+
+        #Saniya p {
+            font-size: 14px;
+        }
+
+        #sonali p {
+            font-size: 14px;
+        }
+
+        .head1 {
+            display: block;
+            text-align: center;
+           
+            padding-top: 50px;
+            color: red;
+            /* border: 1px solid green; */
+            text-shadow: 8px 7px #e6e6e6;
+            background-color: rgb(244, 244, 244);
+            
+        }
+
+        /* enquiry */
+        .parent-enq{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            background-color: rgb(244, 244, 244);
+       
+        }
+        .school-req{
+            width: 480px;
+        
+            /* border: 3px solid red; */
+            margin:10px 50px;
+            padding: 30px;
+            box-shadow: 0px 10px 25px rgba(47, 46, 46, 0.25);
+            background-color: rgb(244, 244, 244);
+            box-sizing: border-box;
+
+        }
+        .school-req li{
+            list-style:decimal;
+            padding: 10px;
+        }
+        .contact-adm{
+            padding: 30px;
+            text-align: center;
+        }
+        #call p{
+            text-align: center;
+            padding: 10px;
+        }
+        #call h2{
+            text-align: center;
+        }
+        #call a{
+            text-decoration: none;
+        }
+        .faq-section {
+            background-color: rgb(244, 244, 244);
+            /* border: 2px solid green; */
+            padding: 30px;
+            margin:  0px 50px ;
+            width: 500px;
+            box-shadow: 10px 10px 25px rgba(47, 46, 46, 0.25);
+            background-color: rgb(244, 244, 244);
+            
+
+        }
+        #h2{
+            text-align: center;
+        }
+
+        .faq-list {
+            list-style: none;
+
+        }
+        .faq-list h3{
+            margin-top: 10px;
+        }
+
+        .question {
+            font-weight: bold;
+        }
+
+        .answer {
+
+            display: none;
+            /* hide answer by default */
+        }
+
+        .toggle-btn {
+            background-color: rgb(255, 183, 0);
+            border: none;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 5px;
+         
+            cursor: pointer;
+        }
+
+        /* add hover effect to button */
+        .toggle-btn:hover {
+            background-color: white;
+            color: blue;
+            border: 1px solid blue;
+        }
+
+        /* Responsiveness */
+        @media only screen and (max-width: 550px) {
+        .school-req{
+            margin: 0;
+            padding: 8px;
+            box-shadow: none;
+        }
+        .school-req h2{
+            font-size: 19px;
+        }
+        .faq-section{
+            padding: 10px;
+            margin: 0;
+            box-shadow: none;
+        }
+        .parentresponse{
+            padding: 5px;
+        }
+        .response{
+            width: auto;
+            height: auto;
+        }
+        .words{
+            width: auto;
+        }
+        .head1{
+            padding-top: 0px;
+        }
+        .toggle-btn{
+            padding: 5px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="enq-head"><h1>Admission Enquiry</h1></div>
+    <div class="parent-enq" data-aos="fade-left">
+        <div class="school-req">
+            <h2 id="h2" >
+                Documents require for admission process.</h2>
+                <li>
+                    Previous year passing certificate with marks card.
+                </li>
+                <li>
+                    School leaving certificate.
+                </li>
+                <li>
+                   student's adhar card.
+                </li>
+                <li>
+                    Parents adhar card and mobile number.
+                </li>
+                <li>Relevant fees.</li>
+         <div id="call"><h2>Contact for admission</h2>
+         <p>Asst Tr. - Sanjay Majukar</p>
+         <p><img src="https://cdn-icons-png.flaticon.com/128/3059/3059502.png" width="13px"> <a href="tel: +91 9986434604">- 9986434604</a></p>
+        </div>
+
+        </div>
+
+ 
+    <div class="faq-section" data-aos="fade-left">
+        <h2 id="h2">Frequently Asked Questions</h2>
+        <ul class="faq-list">
+            <li>
+                <h3 class="question">What are the admission requirements?</h3>
+                <p class="answer">The admission requirements vary depending on the which class you are applying for. Few of them are listed in
+                    school website
+                  </p>
+                <button class="toggle-btn">Show Answer</button>
+            </li>
+            <li>
+                <h3 class="question">How do I apply?</h3>
+                <p class="answer">Visite our school. Simply fill out the application form and
+                    submit it along with any required documents.</p>
+                <button class="toggle-btn">Show Answer</button>
+            </li>
+         
+            <li>
+                <h3 class="question">How long does the admission process take?</h3>
+                <p class="answer">Once if you fill the application form and if you submit the required documents to school then your admission process is over.</p>
+                <button class="toggle-btn">Show Answer</button>
+            </li>
+            <li>
+                <h3 class="question">What financial aid is available?</h3>
+                <p class="answer">We offer a range of financial aid options, including scholarships, grants, and loans.
+                    Please visit our school for more information.</p>
+                <button class="toggle-btn">Show Answer</button>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+    <div class="head1">
+        <h1>What Our Student Says</h1>
+    </div>
+    <div class="parentresponse">
+
+        <div class="response" data-aos="fade-left">
+            <div class="image"><img src="gan1.png" width="50px"></div>
+            <div class="words">
+                <p>" The knowledge and skills I gained from Shri Shivaji Vidyalay have been invaluable in my continued
+                    academic pursuits. I am proud to have been a part of such a supportive school. Thank you for
+                    everything."</p><br>
+                <h3>- Ganesh Kugaji</h3>
+            </div>
+        </div>
+        <div class="response" data-aos="fade-left">
+            <div class="image"><img src="sweta.png" width="50px"></div>
+            <div class="words">
+                <p>" My high school life in Shri Shivaji Vidyalay was the best I had so far. It was a perfect definition
+                    of what we call life. teacher's are also very supportive. It was both a mixture of sorrow and joy,
+                    of trust and betrayal, of love and hatred.
+                    In short, it was amazing "</p><br>
+                <h3>- Swheta Pathani</h3>
+            </div>
+        </div>
+        <div class="response" data-aos="fade-left">
+            <div class="image"><img src="sania1.png" width="50px"></div>
+            <div class="words" id="Saniya">
+                <p>" Today I'm studying in a Institute like GIT just bcoz of the knowledge which I got from my school
+                    that is Shri Shivaji vidyalay. These days were the memorable days. Being a Marathi medium girl I
+                    never hesitate to compute with English medium students in clg life just because the self confidence
+                    was built in that way by the teachers of Shivaji vidyalay.It was an amazing journey "</p>
+                <br>
+                <h3>- Saniya Patil</h3>
+            </div>
+        </div>
+        <div class="response" data-aos="fade-left">
+            <div class="image"><img src="Rekha1.png" width="50px"></div>
+            <div class="words">
+                <p>" Our school name is Shri shivaji vidyalaya yellur. It was a awesome place where we come together,
+                    learn together all things like games , competition exams , entertainment etc and teachers were good
+                    as well as our friend circle was also good."</p>
+                <br>
+                <h3>- Rekha Murkute</h3>
+            </div>
+        </div>
+        <div class="response" data-aos="fade-left">
+            <div class="image"><img src="mn1.png" width="50px"></div>
+            <div class="words">
+                <p>
+                    " I am very grateful for my school Shri Shivaji Vidyalay , I feel a deep sense of gratitude for the
+                    opportunities that were available to me. From academic challenges to social connections, I was
+                    fortunate to have a supportive environment that helped me grow and thrive."
+                </p><br>
+                <h3>- Manoj B.</h3>
+            </div>
+        </div>
+        <div class="response" data-aos="fade-left">
+            <div class="image"><img src="kb1.png" width="50px"></div>
+            <div class="words">
+                <p>" My school was a time of growth, learning and friendships. Grateful for teachers who challenged me,
+                    friends who supported me, and opportunities that shaped me. Fond memories of a formative period."
+                </p>
+                <h3>- Kishore B.</h3>
+            </div>
+        </div>
+        <div class="response" data-aos="fade-left">
+            <div class="image"><img src="sonali1.png" width="50px"></div>
+            <div class="words" id="sonali">
+                <p>" Highschool grows you into the person you are.I have great memories good and bad,some learning
+                    experiences and some that I'll take with me the rest of my life.
+                    They influenced us and motivated to attend the college and accomplish goals I have set for myself .
+                    Apart from all materialist thing's they taught us the value of person and society .
+                    Being in SSV for 3 years i can't denny that those were the golden days of my life 💫!"
+                </p><br>
+                <h3>- Sonali D.</h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 1000,
+        });
+    </script>
+
+    <script>
+        const toggleButtons = document.querySelectorAll(".toggle-btn");
+        toggleButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                const answer = button.previousElementSibling;
+                if (answer.style.display === "none") {
+                    answer.style.display = "block";
+                    button.textContent = "Hide Answer";
+                } else {
+                    answer.style.display = "none";
+                    button.textContent = "Show Answer";
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
